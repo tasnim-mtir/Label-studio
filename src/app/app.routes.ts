@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { UserLayoutComponent } from './layout/user-layout/user-layout.component';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
+
 import { UserSpaceComponent } from './layout/user-space/user-space.component';
 export const routes: Routes = [
     {
@@ -14,8 +13,3 @@ export const routes: Routes = [
             ] },
 
 ];
-@NgModule({
-    imports:[RouterModule.forRoot(routes)],
-    exports:[RouterModule]
-})
-export class AppRoutingModule {}
