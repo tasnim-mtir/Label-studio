@@ -4,11 +4,13 @@ import { UserSpaceComponent } from './layout/user-space/user-space.component';
 export const routes: Routes = [
     {
         path:'',component:UserLayoutComponent, children:[
-            {path:'hello',loadChildren:()=> import('./views/user/login/login.module').then(m=> m.LoginModule)},
+            {path:'login',loadChildren:()=> import('./views/user/login/login.module').then(m=> m.LoginModule)},
+            {path:'register',loadChildren:()=> import('./views/user/signup/signup.module').then(m=> m.SignupModule)},
+
         ] },
         {
         path:'',component:UserSpaceComponent, children:[
-                {path:'hi',loadChildren:()=> import('./views/user/user-space/user-space.module').then(m=> m.UserSpaceModule)},
+                {path:'dashboard',loadChildren:()=> import('./views/user/user-space/user-space.module').then(m=> m.UserSpaceModule)},
             ] },
 
 ];

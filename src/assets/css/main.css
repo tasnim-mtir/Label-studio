@@ -60,7 +60,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #57b846;
+  color: #3b99d8;
 }
 
 /*---------------------------------------------*/
@@ -183,7 +183,7 @@ iframe {
 
 
 .wrap-login100 {
-  width: 670px;
+  width: 970px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -310,7 +310,7 @@ iframe {
   -moz-transition: all 0.6s;
   transition: all 0.6s;
 
-  background: #57b846;
+  background: #3b99d8;
 }
 
 
@@ -376,7 +376,7 @@ input.input100 {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  color: #57b846;
+  color: #3b99d8;
 }
 
 /*------------------------------------------------------------------
@@ -402,7 +402,7 @@ input.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 50px;
-  background-color: #57b846;
+  background-color: #3b99d8;
   border-radius: 25px;
 
   font-family: Poppins-Regular;
