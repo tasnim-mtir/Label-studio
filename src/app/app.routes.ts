@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { UserLayoutComponent } from './layout/user-layout/user-layout.component';
-
 import { UserSpaceComponent } from './layout/user-space/user-space.component';
 export const routes: Routes = [
     {
