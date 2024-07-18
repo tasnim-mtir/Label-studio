@@ -14,8 +14,7 @@ export class LoginComponent implements OnInit {
 
 
   constructor(
-      private formBuilder: FormBuilder,
-      ) {
+      private formBuilder: FormBuilder , private userservice:ServiceUserService , private router: Router, ) {
 
   }
   myCustomValidator(control: FormControl): { [key: string]: boolean } | null {
@@ -42,8 +41,21 @@ export class LoginComponent implements OnInit {
   }
 
 
-  login() {
-
+  login(f: any) {
+    let data = f.value;
+    // First, try to log in the user
+    this.userservice.login(data).subscribe({
+      next: (response: any) => {
+        this.userservice.login(response.token)
+        this.router.navigate(['/dashbord'])
+        console.log(response)
+      },
+      error: err => {
+        // If login fails, display an error message
+        console.log(err);
+        this.msg = err.error.msg;
+      }
+    });
   }
 
 }
