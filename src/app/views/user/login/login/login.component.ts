@@ -13,8 +13,7 @@ export class LoginComponent implements OnInit {
   msg: any;
 
 
-  constructor(private Userservice:ServiceUserService,
-     private router: Router,
+  constructor(
       private formBuilder: FormBuilder,
       ) {
 
